@@ -69,6 +69,10 @@ fn main() {
     let first = a[0];
     let second = a[1];
 
+    // array
+    let a = [1, 2, 3, 4, 5];
+    // statics 
+    static LANGUAGE: &str = "Rust";
 }
 
 
