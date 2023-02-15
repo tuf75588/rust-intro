@@ -84,8 +84,10 @@ fn main() {
         println!("The inner scope value of x is: {x}");
 
     }
-    println!("The value of x is: {x}")
+    println!("The value of x is: {x}");
 
+    let mut spaces = "   ";
+    spaces = spaces.len();
 }
 
 
