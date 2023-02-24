@@ -86,7 +86,11 @@ fn main() {
     }
     println!("The value of x is: {x}");
 
-
+ 
+    // parse a string into a number
+    let strings = "45";
+    let strings: String = strings.parse().expect("Not a number!");
+    println!("The value of strings is: {strings}")
 }
 
 
