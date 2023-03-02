@@ -90,7 +90,7 @@ fn main() {
     // parse a string into a number
     let strings = "45";
     let strings: String = strings.parse().expect("Not a number!");
-    println!("The value of strings is: {strings}")
+    println!("The value of strings is: {strings}cd ")
 }
 
 
