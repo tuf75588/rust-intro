@@ -73,6 +73,24 @@ fn main() {
     let a = [1, 2, 3, 4, 5];
     // statics 
     static LANGUAGE: &str = "Rust";
+
+
+    // variable shadowing examples
+    let x = 5;
+    let x = x + 1;
+
+    {
+        let x = x * 2;
+        println!("The inner scope value of x is: {x}");
+
+    }
+    println!("The value of x is: {x}");
+
+ 
+    // parse a string into a number
+    let strings = "45";
+    let strings: String = strings.parse().expect("Not a number!");
+    println!("The value of strings is: {strings}cd ")
 }
 
 
