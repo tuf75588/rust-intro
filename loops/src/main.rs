@@ -1,8 +1,6 @@
 fn main() {
-    let mut counter = 3;
-    while counter != 0 {
-        println!("{counter}");
-        counter -= 1;
+    for element in (0..4).rev() {
+        println!("element = {element}");
     }
-    println!("Liftoff");
+    println!("LIFTOFF!")
 }
