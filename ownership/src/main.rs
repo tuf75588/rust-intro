@@ -3,7 +3,6 @@ fn main() {
     let s2 = s1.clone();
     let s3 = String::from("world");
     println!("s1 = {}, s2 = {}", s1, s2);
-    // show an example of ownership in Rust
     let s = String::from("hello"); // s comes into scope
     takes_ownership(s); // s's value moves into the function...
                         // ... and so is no longer valid here
