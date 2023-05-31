@@ -4,9 +4,6 @@ fn main() {
     println!("{:?}", str_slice)
 }
 
-fn log_num(s: u32) -> u32 {
-    return s;
-}
 
 fn first_word(s: &String) -> usize {
     let bytes = s.as_bytes();
