@@ -1,24 +1,20 @@
 fn main() {
-    let s: String = String::from("hello world");
+    let mut s: String = String::from("hello world");
     /* a string slice */
     /* is a part of a String */
-    let hello: &str = &s[0..2];
-    let world: &str = &s[6..11];
-    println!("{hello} {world}");
+    let word = first_word(&s);
 
 
+    println!("the first word is: {}", word);
 }
 
-
-// fn first_word(s: &String) -> usize {
-//     let bytes: &[u8] = s.as_bytes();
-//     for (_i, &item) in bytes.iter().enumerate() {
-//       // check for a space character with byte literal syntax
-//       if item == b' ' {
-//         println!("{_i}");
-//         return _i;
-//       }
-//     }
-//     s.len()
-// }
-
+// &str represents the string slice type
+fn first_word(s: &str) -> &str {
+    let bytes = s.as_bytes();
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[0..i];
+        }
+    }
+    &s[..]
+}
