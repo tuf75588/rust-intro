@@ -20,6 +20,8 @@ fn main() {
         sign_in_count: 1,
     };
     let mut user1 = build_user(String::from("atd285@gmail.com"), String::from("atd285"));
+    let mut user2 = User {
+        ..user1
 }
 
 fn build_user(email: String, username: String) -> User {
