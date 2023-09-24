@@ -27,7 +27,7 @@ fn main() {
         String::from("Andrew"),
         55,
     );
-    let mut post1: Post = build_post(true, String::from("andreŵ"), String::from("Andrew"), 55);
+    let mut post1: Post = build_post(true, String::from("andrew"), String::from("Andrew"), 55);
 }
 
 fn build_user(email: String, username: String, author: String, sign_in_count: u64) -> User {
