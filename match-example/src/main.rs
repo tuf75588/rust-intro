@@ -5,15 +5,16 @@ enum NameMatch {
     Mary,
 }
 fn main() {
-    let name = NameMatch::Andrew;
-    find_match(name);
+    let five = Some(5);
+    let six = plus_one(five);
+    let none = plus_one(None);
+    println!("{:?}", six);
 }
 
-fn find_match(name: NameMatch) {
-    match name {
-        NameMatch::Andrew => println!("Lucky penny"),
-        NameMatch::Bob => println!("Not so lucky"),
-        NameMatch::John => println!("Lucky Dime"),
-        NameMatch::Mary => println!("Lucky Quarter"),
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        None => None,
+        Some(i) => Some(i + 1),
     }
 }
+
