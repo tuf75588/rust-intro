@@ -14,8 +14,7 @@ impl Rectangle {
 }
 
 fn main() {
-    let sq = Rectangle::square(3);
+    let sq: Rectangle = Rectangle::square(3);
     println!("sq is {:?}", sq)
 }
 
-// adding useful information with derived traits

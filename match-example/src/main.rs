@@ -5,9 +5,9 @@ enum NameMatch {
     Mary,
 }
 fn main() {
-    let five = Some(5);
-    let six = plus_one(five);
-    let none = plus_one(None);
+    let five: Option<i32> = Some(5);
+    let six: Option<i32> = plus_one(five);
+    let none: Option<i32> = plus_one(None);
     println!("{:?}", six);
 }
 
