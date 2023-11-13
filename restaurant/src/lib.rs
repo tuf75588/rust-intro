@@ -1,6 +1,4 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+
 mod front_of_house {
     mod hosting {
         fn add_to_waitlist() {}
@@ -19,7 +17,7 @@ mod tests {
 
     #[test]
     fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
+        assert_eq!(2 + 2, 4);
+        front_of_house::hosting::add_to_waitlist();
     }
 }
