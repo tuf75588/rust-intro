@@ -1,12 +1,10 @@
-mod front_of_house {
-    pub mod hosting {
-        pub fn add_to_waitlist() {}
-    }
+use std::fmt;
+use std::io;
+
+fn function1() -> fmt::Result {
+    println!("function1");
 }
 
-mod customer {
-    use super::front_of_house::hosting;
-    pub fn eat_at_restaurant() {
-        hosting::add_to_waitlist();
-    }
+fn function2() -> io::Result<()> {
+    println!("function2");
 }
