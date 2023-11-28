@@ -1,16 +1,13 @@
 use std::fmt::Result;
-use std::fmt::Result as IOResult;
-
-fn function1() -> Result {
+fn function1() -> Result<(), std::fmt::Error> {
     println!("function1");
+    Ok(())
 }
 
-fn function2() -> IOResult<()> {
+fn function2() -> Result<(), std::fmt::Error> {
     println!("function2");
+    Ok(())
 }
-/* 
-one more thing
-*/
 mod front_of_house {
     pub mod hosting {
         pub fn add_to_waitlist() {
@@ -20,7 +17,7 @@ mod front_of_house {
 }
 
 pub use crate::front_of_house::hosting;
-
 pub fn eat_at_restaurant() {
     hosting::add_to_waitlist();
 }
+
